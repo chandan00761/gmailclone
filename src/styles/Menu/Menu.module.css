@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.menuContainer {
+    width: fit-content;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.menuContainer>*{
+    padding-left: 2rem;
+}
+
+.composeMail {
+    display: flex;
+    border-radius: 24px;
+    width: 8rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 4rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: solid thin #b4b4bd;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+        0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+
+.composeMail:hover{
+    background-color: #fafafb;
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149);
+}
+
+.composeText {
+    text-align: center;
+    padding-left: 0.875rem;
+    align-self: center;
+    font-size: 0.875rem;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.25px;
+    color: #3c4043;
+    font-weight: 600;
+}
+
+.mailItems {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    display: flex;
+    cursor: pointer;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.mailItems:hover{
+    background-color: #f1f3f4;
+}
+
+.itemIcon {
+    padding-right: 1rem;
+}
+
+.itemText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    align-self: center;
+    letter-spacing: 0.2px;
+    color: #202124;
+    text-shadow: none;
+    font-weight: 600;
+}
+
+.activeMailItem, .composeMail.activeMailItem:hover{
+    background-color: #e8eaed !important;
+}
+
+.menuInactive{
+    display: none;
+}
+
+.minMenu {
+    width: 1.7rem !important;
+}
+
+.mailItems.minMenu{
+    margin-left: 1.25rem !important;
+    padding-left: 0.5rem !important;
+    border-radius: 24px;
+}

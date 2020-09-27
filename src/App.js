@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { connect } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from "./components/Header/Header";
+import Menu from './components/Menu/Menu';
+import actions from './store/actions';
+
+class App extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <Header menuHandler={() => this.props.toggleMenu()}/>
+                <Menu/>
+            </React.Fragment>
+        );
+    }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        menuOpen: state.menuStatus,
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleMenu : () => dispatch({type: actions.TOGGLE_MENU})
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

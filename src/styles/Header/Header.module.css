@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    border-bottom: solid thin #eceff1;
+}
+
+.icon_setting{
+    fill:#5f6368;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.icon_setting:hover{
+    background-color: rgba(60,64,67,0.08);
+}
+
+.icons{
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.icons:hover{
+    background-color: rgba(60,64,67,0.08);
+    cursor: pointer;
+}

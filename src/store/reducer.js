@@ -1,0 +1,26 @@
+import actions from './actions';
+import menu from './menuItems';
+
+const initialState = {
+    menuActive : false,
+    menuItemActive: menu.MENU_INBOX
+};
+
+const reducer = (state = initialState, action = null) => {
+    switch(action.type){
+        case actions.TOGGLE_MENU:
+            return {
+                ...state,
+                menuActive: !state.menuActive
+            }
+        case actions.SELECT_ITEM:
+            return {
+                ...state,
+                menuItemActive: action.payload
+            }
+        default:
+            return state;
+    }
+}
+
+export default reducer
