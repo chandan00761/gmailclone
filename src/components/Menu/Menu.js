@@ -21,11 +21,11 @@ const Menu = (props) => {
     ].join(" ");
 
     return (
-        <IconContext.Provider value={{ size: "1.2rem", color: "#747474" }}>
+        <IconContext.Provider value={{ size: "1.2em", color: "#747474" }}>
             <aside className={styles.menuContainer}>
                 <div className={[styles.composeMail, props.menuStatus ? null : styles.minMenu].join(" ")}>
                     <AiOutlinePlus
-                        size="1.7rem"
+                        size="1.7em"
                         color="#5f6368"
                         className={styles.icons}
                     />

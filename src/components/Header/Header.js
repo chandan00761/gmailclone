@@ -18,7 +18,7 @@ import styles from "../../styles/Header/Header.module.css";
 
 const Header = (props) => {
   return (
-    <IconContext.Provider value={{ size: "1.5rem", color: "#5f6368", className:styles.icons}}>
+    <IconContext.Provider value={{ size: "1.5em", color: "#5f6368", className:styles.icons}}>
       <header className={styles.header}>
         <span>
           <GiHamburgerMenu onClick={props.menuHandler} />

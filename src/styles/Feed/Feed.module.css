@@ -1,0 +1,59 @@
+.feed {
+    padding-top: 1rem;
+}
+
+.controls {
+    display: flex;
+    margin: auto;
+}
+
+.controls > span {
+    cursor: pointer;
+}
+
+.controls > span:nth-child(1) > .feedIcon {
+    border-radius: 0 !important;
+}
+
+.controls > span:nth-child(2) > .feedIcon {
+    border-radius: 0 !important;
+}
+
+.selector {
+    border-radius: 0 !important;
+}
+
+.controls > span:nth-child(5){
+    flex-grow: 2;
+}
+
+.border8 {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    color: #5f6368;
+    align-self: center;
+}
+
+.border8:hover{
+    background-color: #f1f3f4;
+}
+
+.feedIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 24px;
+}
+
+.feedIcon:hover {
+    fill: black;
+    background-color: #f1f3f4;
+}
+
+.feedIconStroke:hover {
+    stroke: black !important;
+    fill: white !important;
+}

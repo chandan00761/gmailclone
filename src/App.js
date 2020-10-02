@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import Header from "./components/Header/Header";
 import Menu from './components/Menu/Menu';
+import Feed from './components/Feed/Feed';
 import actions from './store/actions';
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
             <React.Fragment>
                 <Header menuHandler={() => this.props.toggleMenu()}/>
                 <Menu/>
+                <Feed/>
             </React.Fragment>
         );
     }

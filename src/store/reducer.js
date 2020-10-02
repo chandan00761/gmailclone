@@ -2,8 +2,9 @@ import actions from './actions';
 import menu from './menuItems';
 
 const initialState = {
-    menuActive : false,
-    menuItemActive: menu.MENU_INBOX
+    menuActive: true,
+    menuItemActive: menu.MENU_INBOX,
+    feedSelectAll: false
 };
 
 const reducer = (state = initialState, action = null) => {
@@ -17,6 +18,11 @@ const reducer = (state = initialState, action = null) => {
             return {
                 ...state,
                 menuItemActive: action.payload
+            }
+        case actions.TOGGLE_SELECT_ALL:
+            return {
+                ...state,
+                feedSelectAll: !state.feedSelectAll
             }
         default:
             return state;
