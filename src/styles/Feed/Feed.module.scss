@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .feed {
     padding-top: 1rem;
 }
@@ -5,26 +7,22 @@
 .controls {
     display: flex;
     margin: auto;
-}
-
-.controls > span {
-    cursor: pointer;
-}
-
-.controls > span:nth-child(1) > .feedIcon {
-    border-radius: 0 !important;
-}
-
-.controls > span:nth-child(2) > .feedIcon {
-    border-radius: 0 !important;
+    & > span {
+        cursor: pointer;
+        &:nth-child(1) > .feedIcon {
+            border-radius: 0 !important;
+        }
+        &:nth-child(2) > .feedIcon {
+            border-radius: 0 !important;
+        }
+        &:nth-child(5){
+            flex-grow: 2;
+        }
+    }
 }
 
 .selector {
     border-radius: 0 !important;
-}
-
-.controls > span:nth-child(5){
-    flex-grow: 2;
 }
 
 .border8 {
@@ -35,10 +33,9 @@
     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     color: #5f6368;
     align-self: center;
-}
-
-.border8:hover{
-    background-color: #f1f3f4;
+    &:hover{
+        background-color: $gmail_color_background_search;
+    }
 }
 
 .feedIcon {
@@ -50,7 +47,7 @@
 
 .feedIcon:hover {
     fill: black;
-    background-color: #f1f3f4;
+    background-color: $gmail_color_background_search;
 }
 
 .feedIconStroke:hover {

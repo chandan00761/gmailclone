@@ -1,6 +1,8 @@
+@import '../colors.scss';
+
 .search{
     display: flex;
-    background-color: #f1f3f4;
+    background-color: $gmail_color_background_search;
     border-radius: 8px;
     padding: 0.1rem;
     flex-grow: 2;
@@ -15,12 +17,12 @@
     border: none;
     margin: 0;
     width: 100%;
-    background-color: #f1f3f4;
+    background-color: $gmail_color_background_search;
 }
 
 span.searchActive {
-    border: solid thin #c2c2c4;
-    box-shadow: 2px 2px 2px #e1e1e1;
+    border: solid thin $gmail_color_search_active_border;
+    box-shadow: 2px 2px 2px $gmail_color_search_active_box_shadow;
 }
 
 .searchActive{

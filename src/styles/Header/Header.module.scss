@@ -1,0 +1,28 @@
+@import '../colors.scss';
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 0;
+    border-bottom: solid thin $gmail_color_border;
+}
+
+.icon_setting {
+    fill: $gmail_color_icon_fill;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: $gmail_color_icon_hover;
+    }
+}
+
+.icons{
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+    &:hover {
+        background-color: $gmail_color_icon_hover;
+    }
+}

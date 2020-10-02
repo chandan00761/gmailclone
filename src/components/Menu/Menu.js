@@ -12,7 +12,7 @@ import { FaTrash } from "react-icons/fa";
 
 import actions from "../../store/actions";
 import menu from "../../store/menuItems";
-import styles from "../../styles/Menu/Menu.module.css";
+import styles from "../../styles/Menu/Menu.module.scss";
 
 const Menu = (props) => {
     const itemTextStyle = [

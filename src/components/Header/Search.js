@@ -5,7 +5,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 
 // STYLES IMPORT
-import styles from "../../styles/Header/Search.module.css";
+import styles from "../../styles/Header/Search.module.scss";
 
 class Search extends React.Component {
     constructor(props) {

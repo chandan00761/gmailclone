@@ -17,7 +17,7 @@ import {
     feedIcon,
     border8,
     feedIconStroke,
-} from "../../styles/Feed/Feed.module.css";
+} from "../../styles/Feed/Feed.module.scss";
 
 const Controls = (props) => {
     return (

@@ -14,7 +14,7 @@ import GoogleSetting from "../../icons/GoogleSetting";
 
 // STYLES IMPORT
 
-import styles from "../../styles/Header/Header.module.css";
+import styles from "../../styles/Header/Header.module.scss";
 
 const Header = (props) => {
   return (
