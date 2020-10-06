@@ -2,6 +2,7 @@ const actions = {
     TOGGLE_MENU : "TOGGLE_MENU",
     SELECT_ITEM : "SELECT_ITEM",
     TOGGLE_SELECT_ALL : "TOGGLE_SELECT_ALL",
-}
+    SELECT_MAIL_CAT : "SELECT_MAIL_CATEGORIES",
+};
 
 export default actions

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import '../colors.scss';
+@import '../fonts.scss';
 
 .menuContainer {
     width: fit-content;
@@ -35,7 +36,7 @@
     padding-left: 0.875rem;
     align-self: center;
     font-size: 0.875rem;
-    font-family: "Raleway", sans-serif;
+    font-family: $font_raleway;
     letter-spacing: 0.25px;
     color: #3c4043;
     font-weight: 600;
@@ -58,7 +59,7 @@
 }
 
 .itemText {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font_roboto;
     font-size: 0.875rem;
     align-self: center;
     letter-spacing: 0.2px;

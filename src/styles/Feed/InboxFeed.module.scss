@@ -1,0 +1,64 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+
+.inboxFeed>div {
+    display: flex
+}
+
+.mailTypes>div {
+    padding: 1rem 7rem 1rem 1rem;
+    display: flex;
+    cursor: pointer;
+    color: #3c4043;
+    font-weight: 600;
+    font-size: 0.875rem;
+    align-self: center;
+    font-family: $font_raleway;
+    letter-spacing: 0.25px;
+
+    &:hover {
+        background-color: $gmail_color_category_hover;
+        color: black;
+
+        &>svg {
+            fill: black;
+        }
+    }
+
+    &>svg {
+        padding-right: 1rem;
+    }
+}
+
+.activeRed {
+    color: $gmail_color_primary !important;
+    border-bottom: solid $gmail_color_primary;
+
+    &>svg {
+        fill: $gmail_color_primary !important;
+    }
+}
+
+.activeGreen {
+    color: $gmail_color_social !important;
+    border-bottom: solid $gmail_color_social;
+
+    &>svg {
+        fill: $gmail_color_social !important;
+    }
+}
+
+.activeBlue {
+    color: $gmail_color_promotional !important;
+    border-bottom: solid $gmail_color_promotional;
+
+    &>svg {
+        fill: $gmail_color_promotional !important;
+    }
+}
+
+.mailFeed {
+    width: 80%;
+    float: left;
+    margin-top: 0.5rem;
+}
