@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import Header from "./components/Header/Header";
 import Menu from './components/Menu/Menu';
 import Feed from './components/Feed/Feed';
-import actions from './store/actions';
+import {TOGGLE_MENU} from './store/actions';
 
 class App extends React.Component {
     render() {
@@ -26,7 +26,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleMenu : () => dispatch({type: actions.TOGGLE_MENU})
+    toggleMenu : () => dispatch({type: TOGGLE_MENU})
   };
 };
 

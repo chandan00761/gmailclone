@@ -1,5 +1,5 @@
 import * as React from "react";
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 
 import Controls from "./Controls";
 import InboxFeed from "./InboxFeed";
@@ -8,22 +8,24 @@ import menuItems from "../../store/menuItems";
 import styles from "../../styles/Feed/Feed.module.scss";
 
 const Feed = (props) => {
-    let userFeed = null;
+    let userFeed;
 
     switch (props.menu) {
         case menuItems.MENU_INBOX:
             userFeed = (
-                <main className={styles.feed}>
-                    <Controls class={styles.controls} />
-                    <InboxFeed />
-                </main>
+                <InboxFeed/>
             );
             break;
         default:
             userFeed = <div>Something went wrong!!</div>;
     }
 
-    return userFeed;
+    return (
+        <main className={styles.feed}>
+            <Controls class={styles.controls}/>
+            {userFeed}
+        </main>
+    );
 };
 
 const mapStateToProps = (state) => {
@@ -31,5 +33,6 @@ const mapStateToProps = (state) => {
         menu: state.menuItemActive,
     };
 };
+
 
 export default connect(mapStateToProps)(Feed);

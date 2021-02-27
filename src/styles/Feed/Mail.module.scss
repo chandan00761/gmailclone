@@ -5,25 +5,55 @@
     width: 100%;
     font-size: 0.875rem;
     letter-spacing: 0.25px;
-
     &:hover {
         box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
         z-index: 1;
+    }
+    &:hover{
+        .mailIcons > svg {
+            color: $gmail_color_grey;
+        }
     }
 }
 
 .mailIcons>svg {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
+    color: #d5d5d5;
+    &:hover{
+        color: #020202 !important;
+    }
 }
 
 .mailSender {
     padding-left: 1rem;
-    padding-right: 10rem;
+    padding-right: 1rem;
+}
+
+.read {
+    background-color: #f4f7f7;
+    &> .mailIcons > svg {
+        color: #6f7070;
+    }
 }
 
 .mailSender,
 .mailSubject,
 .mailBody {
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+.unread {
+    &> .mailSender, .mailSubject {
+        font-weight: 900;
+        color: #020202;
+    }
+}
+
+.selected{
+    background-color: #c2dbff;
+    &> td > svg {
+        color: #586474;
+    }
 }

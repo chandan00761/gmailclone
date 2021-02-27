@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 
-import actions from "../../store/actions";
+import { TOGGLE_SELECT_ALL }from "../../store/actions";
 
 import { IconContext } from "react-icons";
 import {
@@ -39,7 +39,7 @@ const Controls = (props) => {
                 <span>
                     <FiMoreVertical />
                 </span>
-                <span></span>
+                <span/>
                 <span className={border8}>1-50 of 3000</span>
                 <span>
                     <HiOutlineChevronLeft className={feedIconStroke} />
@@ -60,7 +60,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        toggleSelectAll: () => dispatch({ type: actions.TOGGLE_SELECT_ALL }),
+        toggleSelectAll: () => dispatch({ type: TOGGLE_SELECT_ALL }),
     };
 };
 

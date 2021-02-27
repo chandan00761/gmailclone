@@ -10,7 +10,7 @@ import { IoMdSend, IoMdDocument } from "react-icons/io";
 import { RiSpam2Fill } from "react-icons/ri";
 import { FaTrash } from "react-icons/fa";
 
-import actions from "../../store/actions";
+import { SELECT_ITEM } from "../../store/actions";
 import menu from "../../store/menuItems";
 import styles from "../../styles/Menu/Menu.module.scss";
 
@@ -151,7 +151,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         selectItem: (item) =>
-            dispatch({ type: actions.SELECT_ITEM, payload: item }),
+            dispatch({ type: SELECT_ITEM, payload: item }),
     };
 };
 

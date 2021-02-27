@@ -2,7 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 
 import Mail from "./Mail";
-import actions from "../../store/actions";
+import { SELECT_MAIL_CAT }from "../../store/actions";
 
 import { IconContext } from "react-icons";
 import { MdInbox } from "react-icons/md";
@@ -51,13 +51,16 @@ const InboxFeed = (props) => {
                     </div>
                 </div>
             </IconContext.Provider>
-            <table className={styles.mailFeed}>
+            <table cellSpacing={"0"} cellPadding={"0"} className={styles.mailFeed}>
                 <tbody>
                     {props.mailList.map((mail) => (
                         <Mail
+                            id={mail.id}
                             from={mail.from}
                             subject={mail.subject}
                             body={mail.body}
+                            read={mail.read}
+                            selected={mail.selected}
                         />
                     ))}
                 </tbody>
@@ -76,7 +79,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         changeCategory: (category) =>
-            dispatch({ type: actions.SELECT_MAIL_CAT, payload: category }),
+            dispatch({ type: SELECT_MAIL_CAT, payload: category }),
     };
 };
 

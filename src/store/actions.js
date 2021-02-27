@@ -1,8 +1,6 @@
-const actions = {
-    TOGGLE_MENU : "TOGGLE_MENU",
-    SELECT_ITEM : "SELECT_ITEM",
-    TOGGLE_SELECT_ALL : "TOGGLE_SELECT_ALL",
-    SELECT_MAIL_CAT : "SELECT_MAIL_CATEGORIES",
-};
-
-export default actions
+export const TOGGLE_MENU = "TOGGLE_MENU";
+export const SELECT_ITEM = "SELECT_ITEM";
+export const TOGGLE_SELECT_ALL = "TOGGLE_SELECT_ALL";
+export const SELECT_MAIL_CAT = "SELECT_MAIL_CATEGORIES";
+export const READ_EMAIL = "TOGGLE_MAIL_STATE_READ";
+export const TOGGLE_SELECT_EMAIL = "SELECT_MAIL";
